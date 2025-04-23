@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Con un Certo Sacro Terrore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Libre+Franklin&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      font-family: 'Libre Baskerville', serif;
+      margin: 0;
+      padding: 2em;
+      user-select: none; /* blocco selezione testo */
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 2.5em;
+      font-family: 'Libre Baskerville', serif;
+    }
+
+    .descrizione {
+      text-align: center;
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 1.1em;
+      margin-top: 1em;
+      margin-bottom: 2em;
+    }
+
+    .immagine {
+      display: block;
+      margin: 0 auto 3em auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .poesie {
+      font-family: 'Libre Baskerville', serif;
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+
+    .poesia {
+      margin: 2em 0;
+      white-space: pre-line;
+      text-align: left;
+    }
+
+    .asterisco {
+      text-align: center;
+      margin: 2em 0;
+      font-size: 1.5em;
+    }
+
+    /* Tentativo (parziale) di blocco screenshot */
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+      background: transparent;
+      backdrop-filter: none;
+    }
+
+    @media print {
+      body {
+        display: none;
+      }
+    }
+  </style>
+  <script>
+    // Blocco copia / tasto destro
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.addEventListener('copy', e => e.preventDefault());
+    document.addEventListener('keydown', function(e) {
+      if ((e.ctrlKey || e.metaKey) && (e.key === 'c' || e.key === 'u' || e.key === 's')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</head>
+<body>
+  <h1>Con un Certo Sacro Terrore</h1>
+  <div class="descrizione">
+    incipit
+  </div>
+  <img class="immagine" src="inserisci-link-immagine.jpg" alt="Immagine della raccolta">
+
+  <div class="poesie">
+    <div class="asterisco">*</div>
+    <div class="poesia">
+      Prima poesia<br>con i versi che vuoi<br>inseriti così<br>uno sotto l'altro.
+    </div>
+    <div class="asterisco">*</div>
+    <div class="poesia">
+      Seconda poesia<br>versi liberi<br>o metrici<br>come preferisci.
+    </div>
+    <div class="asterisco">*</div>
+    <div class="poesia">
+      Terza poesia<br>etc.<br>etc.
+    </div>
+  </div>
+</body>
+</html>
