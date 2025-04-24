@@ -1,10 +1,4 @@
-h1 {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 80px;
-  font-weight: bold;
-  text-align: center;
-}
-
+/* STILI GENERALI */
 body {
   background-color: #ffffff;
   color: #000000;
@@ -12,6 +6,13 @@ body {
   margin: 0;
   padding: 2em;
   user-select: none; /* blocco selezione testo */
+}
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .descrizione {
