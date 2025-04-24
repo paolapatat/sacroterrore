@@ -4,3 +4,65 @@ h1 {
   font-weight: bold;
   text-align: center;
 }
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Libre Baskerville', serif;
+  margin: 0;
+  padding: 2em;
+  user-select: none; /* blocco selezione testo */
+}
+
+.descrizione {
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 1.1em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.immagine {
+  display: block;
+  margin: 0 auto 3em auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.poesie {
+  font-family: 'Libre Baskerville', serif;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+.poesia {
+  margin: 2em 0;
+  white-space: pre-line;
+  text-align: left;
+}
+
+.asterisco {
+  text-align: left;
+  margin: 2em 0;
+  font-size: 1.5em;
+}
+
+/* Tentativo (parziale) di blocco screenshot */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  background: transparent;
+  backdrop-filter: none;
+}
+
+@media print {
+  body {
+    display: none;
+  }
+}
