@@ -71,9 +71,22 @@ body::after {
 
 /* Stile per il contenitore che include sia il titolo che l'immagine */
 .contenitore {
-  max-width: 80%; /* 80% della larghezza della pagina, ad esempio */
+  max-width: 80%; /* Imposta la larghezza del contenitore */
   margin: 0 auto; /* Centra il contenitore */
-  text-align: center; /* Per centrare il titolo e l'immagine */
+  text-align: center; /* Centra tutto il contenuto dentro il contenitore */
+}
+
+/* Stile per il titolo */
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+/* Ispani separano le due righe del titolo */
+h1 span {
+  display: inline-block;
 }
 
 /* Stile per l'immagine */
