@@ -68,3 +68,17 @@ body::after {
     display: none;
   }
 }
+
+/* Stile per desktop (default) */
+img {
+  width: 100%;  /* L'immagine occupa il 100% della larghezza del contenitore */
+  height: auto; /* Altezza proporzionale */
+}
+
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+  img {
+    width: 90%;  /* L'immagine sarà larga il 90% dello schermo su dispositivi mobili */
+    height: auto; /* Mantiene le proporzioni */
+  }
+}
