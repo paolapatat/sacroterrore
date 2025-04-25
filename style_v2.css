@@ -8,13 +8,6 @@ body {
   user-select: none; /* blocco selezione testo */
 }
 
-h1 {
-  font-family: 'Libre Baskerville', serif;
-  font-size: 80px;
-  font-weight: bold;
-  text-align: center;
-}
-
 .descrizione {
   text-align: center;
   font-family: 'Libre Franklin', sans-serif;
