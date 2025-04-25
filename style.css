@@ -74,7 +74,6 @@ body::after {
   max-width: 70%; /* La larghezza massima del contenitore sarà del 70% dello schermo */
   margin: 0 auto; /* Centra il contenitore */
   text-align: center; /* Centra tutto il contenuto dentro il contenitore */
-  width: 100%; /* Imposta la larghezza a 100% per il contenitore */
 }
 
 /* Stile per il titolo */
@@ -87,11 +86,16 @@ h1 {
   width: 100%; /* Assicura che il titolo non esca fuori dal contenitore */
 }
 
+/* Nuovo contenitore per l'immagine */
+.contenitore-immagine {
+  width: 80%; /* Imposta la larghezza del contenitore immagine, puoi modificarla */
+  margin: 20px auto; /* Distanza tra il titolo e l'immagine */
+}
+
 /* Stile per l'immagine */
 img.immagine {
-  max-width: 100%;  /* L'immagine non supererà mai la larghezza del suo contenitore */
+  width: 100%;  /* L'immagine non supererà mai la larghezza del suo contenitore */
   height: auto; /* Mantiene l'aspetto proporzionale dell'immagine */
-  margin-top: 20px; /* Distanza fra titolo e immagine */
 }
 
 /* Media query per dispositivi mobili */
@@ -99,5 +103,8 @@ img.immagine {
   .contenitore {
     max-width: 90%;  /* Riduce la larghezza massima del contenitore su mobile */
   }
-}
 
+  .contenitore-immagine {
+    width: 95%; /* Più largo su mobile */
+  }
+}
