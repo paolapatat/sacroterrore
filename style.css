@@ -71,9 +71,10 @@ body::after {
 
 /* Stile per il contenitore che include sia il titolo che l'immagine */
 .contenitore {
-  max-width: 80%; /* Imposta la larghezza del contenitore */
+  max-width: 70%; /* La larghezza massima del contenitore sarà del 70% dello schermo */
   margin: 0 auto; /* Centra il contenitore */
   text-align: center; /* Centra tutto il contenuto dentro il contenitore */
+  width: 100%; /* Imposta la larghezza a 100% per il contenitore */
 }
 
 /* Stile per il titolo */
@@ -82,25 +83,21 @@ h1 {
   font-weight: 700;
   font-size: 2.5em;
   margin: 0;
-}
-
-/* Ispani separano le due righe del titolo */
-h1 span {
-  display: inline-block;
+  word-wrap: break-word; /* Assicura che il titolo venga a capo */
+  width: 100%; /* Assicura che il titolo non esca fuori dal contenitore */
 }
 
 /* Stile per l'immagine */
-img {
-  width: 100%;  /* L'immagine si adatta alla larghezza del contenitore */
-  height: auto; /* Altezza proporzionale */
+img.immagine {
+  max-width: 100%;  /* L'immagine non supererà mai la larghezza del suo contenitore */
+  height: auto; /* Mantiene l'aspetto proporzionale dell'immagine */
+  margin-top: 20px; /* Distanza fra titolo e immagine */
 }
 
 /* Media query per dispositivi mobili */
 @media (max-width: 768px) {
   .contenitore {
-    max-width: 90%;  /* Aumentiamo la larghezza del contenitore su mobile */
-  }
-  img {
-    width: 100%;  /* L'immagine occupa il 100% della larghezza del contenitore */
+    max-width: 90%;  /* Riduce la larghezza massima del contenitore su mobile */
   }
 }
+
