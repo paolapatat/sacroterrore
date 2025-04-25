@@ -69,16 +69,25 @@ body::after {
   }
 }
 
-/* Stile per desktop (default) */
+/* Stile per il contenitore che include sia il titolo che l'immagine */
+.contenitore {
+  max-width: 80%; /* 80% della larghezza della pagina, ad esempio */
+  margin: 0 auto; /* Centra il contenitore */
+  text-align: center; /* Per centrare il titolo e l'immagine */
+}
+
+/* Stile per l'immagine */
 img {
-  width: 100%;  /* L'immagine occupa il 100% della larghezza del contenitore */
+  width: 100%;  /* L'immagine si adatta alla larghezza del contenitore */
   height: auto; /* Altezza proporzionale */
 }
 
 /* Media query per dispositivi mobili */
 @media (max-width: 768px) {
+  .contenitore {
+    max-width: 90%;  /* Aumentiamo la larghezza del contenitore su mobile */
+  }
   img {
-    width: 90%;  /* L'immagine sarà larga il 90% dello schermo su dispositivi mobili */
-    height: auto; /* Mantiene le proporzioni */
+    width: 100%;  /* L'immagine occupa il 100% della larghezza del contenitore */
   }
 }
