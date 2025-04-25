@@ -64,7 +64,7 @@ body::after {
 
 /* Stile per il contenitore che include sia il titolo che l'immagine */
 .contenitore {
-  max-width: 70%; /* La larghezza massima del contenitore sarà del 70% dello schermo */
+  max-width: 35%; /* La larghezza massima del contenitore sarà del 70% dello schermo */
   margin: 0 auto; /* Centra il contenitore */
   text-align: center; /* Centra tutto il contenuto dentro il contenitore */
 }
@@ -73,7 +73,7 @@ body::after {
 h1 {
   font-family: 'Libre Baskerville', serif;
   font-weight: 700;
-  font-size: 2.5em;
+  font-size: 5em;
   margin: 0;
   word-wrap: break-word; /* Assicura che il titolo venga a capo */
   width: 100%; /* Assicura che il titolo non esca fuori dal contenitore */
