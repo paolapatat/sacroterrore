@@ -10,11 +10,13 @@ body {
 
 h1 {
   font-family: 'Libre Baskerville', serif;
-  font-size: 80px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px; /* Aggiungiamo spazio tra titolo e immagine */
+  font-weight: 700;
+  font-size: 2.5em;
+  margin: 0;
+  word-wrap: break-word; /* Assicura che il titolo venga a capo */
+  width: 100%; /* Assicura che il titolo non esca fuori dal contenitore */
 }
+
 
 .descrizione {
   text-align: center;
@@ -54,36 +56,28 @@ h1 {
 
 /* Stile per il contenitore che include sia il titolo che l'immagine */
 .contenitore {
-  max-width: 90%; /* La larghezza massima del contenitore */
+  width: 90%; /* La larghezza massima del contenitore */
   margin: 0 auto;
   text-align: center;
-}
-
-/* Stile per il titolo */
-h1 {
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-  font-size: 2.5em;
-  margin: 0;
-  word-wrap: break-word;
-  width: 100%; /* Assicura che il titolo non esca fuori dal contenitore */
+  padding-bottom: 20px; /* Spazio in basso per separare il contenuto */
 }
 
 /* Stile per l'immagine */
 .immagine {
   width: 100%;  /* L'immagine occuperà il 100% della larghezza del contenitore */
   height: auto;  /* Mantiene l'aspetto proporzionale dell'immagine */
-  max-height: 50vh;  /* Imposta un'altezza massima pari al 50% dell'altezza della finestra */
+  max-height: 45vh;  /* Imposta un'altezza massima pari al 45% dell'altezza della finestra */
   object-fit: cover; /* Adatta l'immagine senza distorsioni */
+  margin-bottom: 20px; /* Spazio tra l'immagine e il resto del contenuto */
 }
 
 /* Media query per dispositivi mobili */
 @media (max-width: 768px) {
   .contenitore {
-    max-width: 95%;  /* Riduce la larghezza massima su mobile */
+    width: 95%;  /* Riduce la larghezza massima su mobile */
   }
 
   .immagine {
-    max-height: 40vh;  /* Riduce l'altezza massima dell'immagine su mobile */
+    max-height: 40vh;  /* Riduce ulteriormente l'altezza massima dell'immagine su mobile */
   }
 }
